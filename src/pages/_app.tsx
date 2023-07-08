@@ -7,11 +7,11 @@ import { AppProps } from "next/app";
 
 import { AuthProvide } from '../context/AuthContext';
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <AuthProvide>
       <Component {...pageProps} />
-      <ToastContainer autoClose={3000}/>
-    </AuthProvide>    
+      <ToastContainer autoClose={2000}/>
+    </AuthProvide> 
   )
 }
